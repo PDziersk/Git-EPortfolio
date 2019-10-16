@@ -118,6 +118,25 @@ Switched to branch 'master'
 user@machine:~/Documents/gitexample$ git merge new-feature-xyz
 Updating 02fa935..0251570
 Fast-forward
- main.c | 2 +-
+ main.c | 1 +
  1 file changed, 1 insertion(+)
 ```
+
+Now you can create an empty project on your desired management platform and upload it like this:
+```console
+user@machine:~/Documents/gitexample$ git remote add origin <link>
+user@machine:~/Documents/gitexample$ git push --set-upstream origin master
+Username for Git-Platform:
+Password for Git-Platform: 
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 849 bytes | 283.00 KiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0)
+To Git-Platform
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+```
+
+
