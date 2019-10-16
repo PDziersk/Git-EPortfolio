@@ -2,17 +2,18 @@
 
 Files for my ePortfolio about revision control systems and the benefit of using git.
 
+
+
 #### Following commands will be reviewed throughout the Hands-On:
 
-
-Configure your local git application, will be used for reference in the repository
+Configure your local git application, will be used for reference in the repository:
 
 ```console
 user@machine:~$ git config --global user.name "Firstname Lastname"
 user@machine:~$ git config --global user.email "user@mail.com"
 ```
 
-Create an empty folder and initialise a new git repository
+Create an empty folder and initialise a new git repository:
 ```console
 user@machine:~$ cd ./Documents
 user@machine:~/Documents$ mkdir gitexample
@@ -152,7 +153,7 @@ user@machine:~/Documents/gitexample$ git pull
 If you want to download a existing repository use:
 ```console
 user@machine:~/Documents/gitexample$ git clone <link>
-Cloning into 'gitexample'...
+Cloning into 'projectname'...
 remote: Enumerating objects: 9, done.
 remote: Counting objects: 100% (9/9), done.
 remote: Compressing objects: 100% (6/6), done.
