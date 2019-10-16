@@ -139,4 +139,23 @@ To Git-Platform
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
 
+If you want to check if there are some changes on the remote repository:
+```console
+user@machine:~/Documents/gitexample$ git fetch
+```
 
+And you can download the changes with:
+```console
+user@machine:~/Documents/gitexample$ git pull
+```
+
+If you want to download a existing repository use:
+```console
+user@machine:~/Documents/gitexample$ git clone <link>
+Cloning into 'gitexample'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 9 (delta 1), reused 0 (delta 0)
+Unpacking objects: 100% (9/9), done.
+```
