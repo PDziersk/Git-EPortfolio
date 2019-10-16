@@ -85,8 +85,14 @@ Date:   Wed Oct 16 19:32:10 2019 +0200
 
 ```
 
+Now we can create a new branch and switch to it with:
+```console
+user@machine:~/Documents/gitexample$ git branch new-feature-xyz
+user@machine:~/Documents/gitexample$ git checkout new-feature-xyz
+Switched to branch 'new-feature-xyz'
+```
 
-Change the program to:
+Next change the program to:
 ```c
 #include <stdio.h>
 
@@ -97,10 +103,21 @@ int main() {
 }
 ```
 
-After this add it to your repository:
+And add it to your repository:
 ```console
 user@machine:~/Documents/gitexample$ git add main.c
 [...]
 user@machine:~/Documents/gitexample$ git commit -m "Added author"
 [...]
+```
+
+After that you can switch to your default branch called master and merge the content:
+```console
+user@machine:~/Documents/gitexample$ git checkout master
+Switched to branch 'master'
+user@machine:~/Documents/gitexample$ git merge new-feature-xyz
+Updating 02fa935..0251570
+Fast-forward
+ main.c | 2 +-
+ 1 file changed, 1 insertion(+)
 ```
